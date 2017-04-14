@@ -1,2 +1,2 @@
 # Major_Project
-This repo is for major project of college
+This repo is for major project of College
