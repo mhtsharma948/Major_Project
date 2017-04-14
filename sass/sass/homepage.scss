@@ -1,0 +1,130 @@
+@mixin large-text {
+  font: {
+    family: Arial;
+    size: 25px;
+    weight: bold;
+  }
+  color: white;
+}
+
+@mixin small-text {
+  font: {
+    family: Arial;
+    size: 20px;
+    weight: bold;
+  }
+  position: absolute;
+  left: 28%;
+  color:white;
+}
+
+body {
+  background-image: url('../../background.jpg');
+}
+
+h1 {
+	color: white;
+	position: relative;
+	left: 30%;
+	top: 10%;
+}
+
+.main {
+	position: relative;
+	top: 35%;
+	left: 40%;
+}
+
+.invalid {
+	@include small-text;
+}
+
+.link {
+	@include large-text;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: orange;
+}
+
+.signinpage, .signup_page, .admin {
+	position: absolute;
+	top: 20%;
+	left:30%;
+	color: sandybrown;
+	font-weight: bold;
+}
+
+.labels {
+	display: inline-block;
+  width: 90px;	
+}
+
+input[type=text], input[type=password] {
+	background-color: wheat;
+	padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 17px;
+}
+
+input[type=submit], input[type=button] {
+  background-color: initial;
+  font-size: 20px;
+  font-family: Courier;
+  border-radius: 17px;
+  border-color: sandybrown;
+  padding: 10px;
+  width: 230px;
+  color: white;
+}
+
+input[type=button] {
+  width: 400px;
+}  
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+	color : white;
+}
+
+th {
+  background-color: rgba(109, 59, 40, 0.64);
+  color: white;
+}
+
+.list {
+	color: white;
+}
+
+span {
+  color: red;
+}
+
+.create_task, .white {
+	color: white;
+}
+
+.corner {
+  position: absolute;
+  right: 12px;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 20px;
+}
+
