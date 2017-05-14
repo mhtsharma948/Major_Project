@@ -3,9 +3,7 @@
   // Retrieving values from form.
   $tname = $descr = $developer = $time = "";
   $nameErr = $timeErr = $descErr = $devErr = "";
-  require 'noSession.php';
   require 'logoutdisplay.php';
-
   $wid = $_GET['wid'];
   if ($_SESSION['role'] == "Manager") { 
   	if(isset($_POST['submit'])) {  
@@ -74,7 +72,7 @@
         else {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }
-         header('Location: /action/user');
+         header('Location: main_page.php');
       }
      
       }
@@ -86,36 +84,39 @@ function test_input($data) {
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
-  }
+  }       
+?>
 
-  echo '<script>
-  function getuser() {
-     xmlhttp = new XMLHttpRequest();
-     xmlhttp.onreadystatechange = function() {
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="sass/stylesheets/homepage.css">
+	<script>
+	function getuser() {
+		 xmlhttp = new XMLHttpRequest();
+		 xmlhttp.onreadystatechange = function() {
      if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("txtHint").innerHTML = this.responseText;
+     	document.getElementById("txtHint").innerHTML = this.responseText;
       }
      };
-     xmlhttp.open("POST","/get_dev.php?wid=' . $wid . '",true);
+     xmlhttp.open("POST","get_dev.php?wid=<?php echo $wid;?>",true);
      xmlhttp.send();
-  } 
-  </script>
+	}	
+	</script>
 </head>
 <!-- Page for Creation of a task -->
 <body>
-  <div class="create_task"> 
-    <form action="/action/taskCreate/' . $wid . '" method="post">
-      <p class="labels">Task Name</p> <input type="text" name="tname" value="' . $tname . '"><span class="error">' . $nameErr . '</span><br>
-      <p class="labels">Estimated Time:</p> <input type="text" name="time" value="' . $time . '"><span class="error">' . $timeErr . '</span><br>
-      <p class="labels">Description: </p><br><textarea rows="10" cols="50" name="description"></textarea><span class="error">' . $descErr . '</span><br><br><br>
-      <input type="button" onclick="getuser()" value ="Add developers"><br><br>
-      <div id ="txtHint" class="white"><span class="error">' . $devErr . '</span><br></textarea><br></div>
-      <br><br>
-      <input type="submit" name="submit" value="save">
-    </form> 
-  </div>  
-</body>';       
-?>
-
-
-	
+	<div class='create_task'> 
+		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>?wid=<?php echo $wid;?>" method="post">
+			<p class="labels">Task Name</p> <input type="text" name="tname" value="<?php echo $tname; ?>"><span class="error"><?php echo $nameErr;?></span><br>
+			<p class="labels">Estimated Time:</p> <input type="text" name="time" value="<?php echo $time; ?>"><span class="error"><?php echo $timeErr;?></span><br>
+			<p class="labels">Description: </p><br><textarea rows="10" cols="50" name="description"></textarea><span class="error"><?php echo $descErr;?></span><br><br><br>
+			<input type="button" onclick="getuser()" value ="Add developers"><br><br>
+			<div id ="txtHint" class="white"><span class="error"><?php echo $devErr;?></span><br></textarea><br></div>
+			<br><br>
+			<input type="submit" name="submit" value="save">
+		</form>	
+	</div>	
+</body>
+</html>
