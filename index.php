@@ -1,13 +1,3 @@
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="sass/stylesheets/homepage.css">
-</head>
-<body></body>
-</html>	
-<?php
-// Start the session
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,9 +8,14 @@ session_start();
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="sass/stylesheets/homepage.css">
 </head>
 <body class="background" background="background.jpg">
+<?php
+// Start the session
+session_start();
+?>
 <?php
     // If no session is there..
     if(empty($_SESSION["user"])) {

@@ -23,7 +23,6 @@
 </nav>
 <?php
 session_start();
-require 'logoutdisplay.php';
 //Checking which user has login and refer to that page according to role assigned.
 if ($_SESSION["uid"] == 1) {
     echo "<a class='link' href='list_workspaces.php'>List of Workspaces</a><br><br><br>";
