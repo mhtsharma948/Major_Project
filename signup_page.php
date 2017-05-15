@@ -50,7 +50,9 @@
                         <input class='validate' type='password' name='pwd' placeholder='Password' value="<?php echo $passwd;?>"><span class="error"><?php echo $pwdErr;?></span><br>
                     </div>
                 </div>
-                <button class="btn waves-effect waves-light cyan lighten-2" type="submit" name="submit" value='Submit'>Submit<i class="material-icons right">send</i></button>
+                <button class="btn waves-effect waves-light cyan lighten-2" type="submit" name="submit" value='Submit'>Submit<i class="material-icons right">send</i></button><br><br>
+                <a href='signin.php'><i class="tiny material-icons">perm_identity</i>already have account?</a>
+
                 <br><br>
             </form>
         </div>

@@ -1,3 +1,12 @@
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+.card{
+    background-color: rgba(251, 255, 255, 0.18) !important;
+}
+.transicard{
+
+}
 /*
 !* line 21, ../sass/homepage.scss *!
 body {

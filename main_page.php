@@ -17,7 +17,7 @@
     <div class='nav-wrapper  cyan lighten-2'>
         <a href='#!' class='brand-logo'>ProjArch</a>
         <ul class='right hide-on-med-and-down'>
-            <li><a href='signin.php'>Sign In</a></li>
+            <li><a href='signout.php'>Sign out</a></li>
         </ul>
     </div>
 </nav>

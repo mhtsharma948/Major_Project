@@ -108,7 +108,7 @@ else {
     echo "<div class='row center'>";
     echo "<div class='col s2'></div>";
     echo "<div class='input-field col s8'>";
-    echo "<i class=\"material-icons prefix\">account_circle</i>";
+    echo "<i class=\"material-icons prefix\">email</i>";
     echo "<input class='validate' type='email' name='email' placeholder='Email' value='" . $name . "'><span>". $emailErr . "</span><br>";
     echo "</div>";
     echo "</div>";
@@ -122,6 +122,7 @@ else {
     echo "</div>";
     echo " <button class=\"btn waves-effect waves-light cyan lighten-2\" type=\"submit\" name=\"submit\" value='Submit'>Submit<i class=\"material-icons right\">send</i></button>";
     echo "</form>";
+    echo "<a href='signup_page.php'><i class=\"tiny material-icons\">perm_identity</i>no account?</a>";
     echo "</div>";
     echo "</div>";
     echo "</div>";
