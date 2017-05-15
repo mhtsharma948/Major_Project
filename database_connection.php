@@ -2,7 +2,7 @@
   // Setting up DB connection
   $servername = "localhost";
   $username = "root";
-  $password = "manager";
+  $password = "anshu.1234";
   $dbname = "project_mgmt";
 // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);

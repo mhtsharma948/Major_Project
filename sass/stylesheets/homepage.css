@@ -1,76 +1,77 @@
-/* line 21, ../sass/homepage.scss */
+/*
+!* line 21, ../sass/homepage.scss *!
 body {
-  /*background-image: url("../../background.jpg");*/
+  !*background-image: url("../../background.jpg");*!
 }
 
-/* line 25, ../sass/homepage.scss */
+!* line 25, ../sass/homepage.scss *!
 h1 {
-  color: white;
   position: relative;
   left: 30%;
   top: 10%;
 }
 
-/* line 32, ../sass/homepage.scss */
+!* line 32, ../sass/homepage.scss *!
 .main {
   position: relative;
   top: 35%;
   left: 40%;
 }
 
-/* line 38, ../sass/homepage.scss */
+!* line 38, ../sass/homepage.scss *!
 .invalid {
   font-family: Arial;
   font-size: 20px;
   font-weight: bold;
   position: absolute;
   left: 28%;
-  color: white;
+  !*color: white;*!
 }
 
-/* line 42, ../sass/homepage.scss */
+!* line 42, ../sass/homepage.scss *!
 .link {
   font-family: Arial;
   font-size: 25px;
   font-weight: bold;
-  color: white;
+  !*color: white;*!
   padding: 20px;
   text-decoration: none;
 }
 
-/* line 48, ../sass/homepage.scss */
+!* line 48, ../sass/homepage.scss *!
 .link:hover {
   color: orange;
 }
 
-/* line 52, ../sass/homepage.scss */
+!* line 52, ../sass/homepage.scss *!
 .signinpage, .signup_page, .admin {
   position: absolute;
   top: 20%;
   left: 30%;
   color: sandybrown;
+  color: sandybrown;
   font-weight: bold;
 }
 
-/* line 60, ../sass/homepage.scss */
+!* line 60, ../sass/homepage.scss *!
 .labels {
   display: inline-block;
   width: 90px;
 }
 
-/* line 65, ../sass/homepage.scss */
+!* line 65, ../sass/homepage.scss *!
 input[type=text], input[type=password] {
   background-color: wheat;
   padding: 10px;
   margin: 10px;
   box-sizing: border-box;
   border: none;
-  color: white;
+  !*color: white;*!
   font-size: 20px;
   border-radius: 17px;
 }
 
-/* line 76, ../sass/homepage.scss */
+!* line 76, ../sass/homepage.scss *!
 input[type=submit], input[type=button] {
   background-color: initial;
   font-size: 20px;
@@ -79,43 +80,44 @@ input[type=submit], input[type=button] {
   border-color: sandybrown;
   padding: 10px;
   width: 124px;
-  color: white;
+  !*color: white;*!
 }
 
-/* line 87, ../sass/homepage.scss */
+!* line 87, ../sass/homepage.scss *!
 input[type=button] {
   width: 400px;
 }
 
-/* line 91, ../sass/homepage.scss */
+!* line 91, ../sass/homepage.scss *!
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
-/* line 96, ../sass/homepage.scss */
+!* line 96, ../sass/homepage.scss *!
 th, td {
   text-align: left;
   padding: 8px;
 }
 
-/* line 101, ../sass/homepage.scss */
+!* line 101, ../sass/homepage.scss *!
 tr {
-  color: white;
+  !*color: white;*!
 }
 
-/* line 105, ../sass/homepage.scss */
+!* line 105, ../sass/homepage.scss *!
 th {
   background-color: rgba(109, 59, 40, 0.64);
-  color: white;
+  !*color: white;*!
 }
 
-/* line 110, ../sass/homepage.scss */
+!* line 110, ../sass/homepage.scss *!
 span, .list {
-  color: white;
+  !*color: white;*!
 }
 
-/* line 114, ../sass/homepage.scss */
+!* line 114, ../sass/homepage.scss *!
 .create_task, .white {
-  color: white;
+  !*color: white;*!
 }
+*/

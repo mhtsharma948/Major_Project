@@ -21,21 +21,24 @@ session_start();
 
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper  cyan lighten-2">
-        <a href="#!" class="brand-logo">ProjArch</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="signin.php">Sign in</a></li>
-            <li><a href="signup_page.php">Sign Up</a></li>
-        </ul>
-    </div>
-</nav>
 <?php
     // If no session is there..
     if(empty($_SESSION["user"])) {
-        echo "<h1>JOYO - Project Management Tool</h1>";
-        echo "<br><div class = 'main'><a href='signin.php' class='link'>Sign In</a>";
-        echo "<a href='signup_page.php' class='link'>Sign up</a></div><br>";
+
+
+        echo "<nav>";
+        echo "<div class='nav-wrapper  cyan lighten-2'>";
+        echo "<a href='#!' class='brand-logo'>ProjArch</a>";
+        echo "<ul class='right hide-on-med-and-down'>";
+        echo "<li><a href='signin.php'>Sign In</a></li>";
+        echo "<li><a href='signup_page.php'>Sign Up</a></li>";
+        echo "</ul>";
+        echo "</div>";
+        echo "</nav>";
+
+
+
+
     }
     // if session exists
     else {
