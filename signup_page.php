@@ -24,17 +24,6 @@
         </div>
     </nav>
 
-    <!-- Sign page for creating new account -->
-    <!--	<div class="signup_page">
-		<form method="post" action="<?php /*echo htmlspecialchars($_SERVER['PHP_SELF']);*/?>">
-			<p class='labels'>UserName: </p><input type="text" name="uname" value="<?php /*echo $name; */?>">
-			<span class="error"><?php /*echo $nameErr;*/?></span><br>
-			<p class='labels'>Emailid:</p><input type="text" name="email" value="<?php /*echo $email; */?>"><span class="error"><?php /*echo $emailErr;*/?></span><br>
-			<p class='labels'>Password:</p><input type="password" name="pwd" value="<?php /*echo $passwd; */?>"><span class="error"><?php /*echo $pwdErr;*/?></span><br>
-			<input type="submit" name="submit">
-		</form>
-	</div>-->
-
 
     <div class='row center-align'><br><br><br>
         <div class='col s3'></div>
