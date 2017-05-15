@@ -101,7 +101,7 @@ else {
     echo "</div>";
     echo "</nav>";
     // sign-in form
-    echo "<div class='row center-align'>";
+    echo "<div class='row center-align'><br><br><br>";
     echo "<div class='col s3'></div>";
     echo "<div class=\"card cyan lighten-5 col s6\">";
     echo "<form action='signin.php' method='post' class='col s12'>";
@@ -121,7 +121,7 @@ else {
     echo "</div>";
     echo "</div>";
     echo " <button class=\"btn waves-effect waves-light cyan lighten-2\" type=\"submit\" name=\"submit\" value='Submit'>Submit<i class=\"material-icons right\">send</i></button>";
-    echo "</from>";
+    echo "</form>";
     echo "</div>";
     echo "</div>";
     echo "</div>";
