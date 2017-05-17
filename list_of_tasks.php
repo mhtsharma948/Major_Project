@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scle=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="resources/icon.png">
+    <link rel="apple-touch-startup-image" href="resources/splash.png">
+    <meta name="apple-mobile-web-app-title" content="ProjArch">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--Apple iOS tags-->
+
+    <!--Other mobile web app tags-->
+    <meta name="mobile-web-app-capable" content="yes">
     <title>Project Arch</title>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,14 +23,9 @@
     <link rel="stylesheet" type="text/css" href="sass/stylesheets/homepage.css">
 </head>
 <body>
-<nav>
-    <div class='nav-wrapper  cyan lighten-2'>
-        <a href='#!' class='brand-logo'>ProjArch</a>
-        <ul class='right hide-on-med-and-down'>
-            <li><a href='signout.php'>Sign out</a></li>
-        </ul>
-    </div>
-</nav>
+<?php
+require 'navAfterSignin.php';
+?>
 <div class='list'></div>
 <?php
     session_start();
@@ -60,6 +66,7 @@
     ?>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script>$(document).ready(function(){ $(".button-collapse").sideNav(); });</script>
 </body>
 </html>
 

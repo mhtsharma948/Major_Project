@@ -1,5 +1,16 @@
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scle=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="resources/icon.png">
+    <link rel="apple-touch-startup-image" href="resources/splash.png">
+    <meta name="apple-mobile-web-app-title" content="ProjArch">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--Apple iOS tags-->
+
+    <!--Other mobile web app tags-->
+    <meta name="mobile-web-app-capable" content="yes">
   <link rel="stylesheet" type="text/css" href="sass/stylesheets/homepage.css">
     <title>Project Arch</title>
     <!--Import Google Icon Font-->
@@ -91,15 +102,7 @@ if ($_SESSION["uid"] == 1 || $_SESSION["role"] == "Manager" || $_SESSION["role"]
 //Login Details
 else {
     //  nav bar
-    echo "<nav>";
-    echo "<div class='nav-wrapper  cyan lighten-2'>";
-    echo "<a href='#!' class='brand-logo'>ProjArch</a>";
-    echo "<ul class='right hide-on-med-and-down'>";
-    echo "<li><a href='signin.php'>Sign In</a></li>";
-    echo "<li><a href='signup_page.php'>Sign Up</a></li>";
-    echo "</ul>";
-    echo "</div>";
-    echo "</nav>";
+    require 'navBeforeSignin.php';
     // sign-in form
     echo "<div class='row center-align'><br><br><br>";
     echo "<div class='col s3'></div>";
@@ -141,5 +144,6 @@ function test_input($data) {
 ?>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script>$(document).ready(function(){ $(".button-collapse").sideNav(); });</script>
 </body>
 </html> 

@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scle=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="resources/icon.png">
+    <link rel="apple-touch-startup-image" href="resources/splash.png">
+    <meta name="apple-mobile-web-app-title" content="ProjArch">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--Apple iOS tags-->
+
+    <!--Other mobile web app tags-->
+    <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="sass/stylesheets/homepage.css">
     <title>Project Arch</title>
     <!--Import Google Icon Font-->
@@ -13,17 +24,30 @@
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
-
+<!--
     <nav>
         <div class='nav-wrapper  cyan lighten-2'>
             <a href='#!' class='brand-logo'>ProjArch</a>
             <ul class='right hide-on-med-and-down'>
+
+            </ul>
+        </div>
+    </nav>
+-->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.php" class="brand-logo">ProjArch</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href='signin.php'>Sign In</a></li>
+                <li><a href='signup_page.php'>Sign Up</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
                 <li><a href='signin.php'>Sign In</a></li>
                 <li><a href='signup_page.php'>Sign Up</a></li>
             </ul>
         </div>
     </nav>
-
 
     <div class='row center-align'><br><br><br>
         <div class='col s3'></div>
@@ -122,6 +146,7 @@
     ?>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+<script>$(document).ready(function(){ $(".button-collapse").sideNav(); });</script>
 </body>
 </html>
 
