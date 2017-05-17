@@ -3,8 +3,11 @@ html {
 }
 .card{
     background-color: rgba(251, 255, 255, 0.18) !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
-.transicard{
+
+.transicard {
 
 }
 /*
