@@ -34,7 +34,7 @@ require 'navAfterSignin.php';
     $wid = $_GET['wid'];
     $dev = $_GET['dev'];
     require 'database_connection.php';
-    echo "<table class='table highlight responsive-table'> <tr><th>Task Name</th><th>Estimate Time</th><th>Description</th><th>Filter</th><th>Update</th></tr>";
+    echo "<table class='table highlight responsive-table'> <thead><tr><th>Task Name</th><th>Estimate Time</th><th>Description</th><th>Filter</th><th>Update</th></tr></thead>";
 
     // List of tasks for the manager
     if (!empty($wid) & $dev != 1) {
@@ -43,7 +43,7 @@ require 'navAfterSignin.php';
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 $task_id = $row['task_id'];
-                echo "<tr><td>" . $row['task_name'] . "</td><td>" . $row['estimate_time'] . "</td><td>" . $row['description']. "</td><td><a class ='list' href=filter.php?tid=". $task_id . "> Filter</a></td></tr>" ;
+                echo "<tbody><tr><td>" . $row['task_name'] . "</td><td>" . $row['estimate_time'] . "</td><td>" . $row['description']. "</td><td><a class ='list' href=filter.php?tid=". $task_id . "> Filter</a></td></tr></tbody>" ;
                 echo "<br>";
             }
         }

@@ -30,25 +30,24 @@ require 'navBeforeSignin.php';
 ?>
     <div class='row center-align'><br><br><br>
         <div class='col s3'></div>
-        <div class="card cyan lighten-5 col s6">
+        <div class="card cyan lighten-5 col l6 s12">
             <form action='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>' method='post' class='col s12'>
                 <div class='row center'>
-                    <div class='col s2'></div>
-                    <div class='input-field col s8'>
+                    <div class='input-field col l11 s12'>
                         <i class="material-icons prefix">account_circle</i>
                         <input class='validate' type='text' name='uname' placeholder='User Name' value="<?php echo $name;?>"><span class="error"><?php echo $nameErr;?></span><br>
                     </div>
                 </div>
                 <div class='row center'>
                     <div class='col s2'></div>
-                    <div class='input-field col s8'>
+                    <div class='input-field col l11 s12'>
                         <i class="material-icons prefix">email</i>
                         <input class='validate' type='email' name='email' placeholder='Email' value="<?php echo $email; ?>"><span class="error"><?php echo $emailErr;?></span><br>
                     </div>
                 </div>
                 <div class='row center'>
                     <div class='col s2'></div>
-                    <div class='input-field col s8'>
+                    <div class='input-field col l11 s12'>
                         <i class="material-icons prefix">vpn_key</i>
                         <input class='validate' type='password' name='pwd' placeholder='Password' value="<?php echo $passwd;?>"><span class="error"><?php echo $pwdErr;?></span><br>
                     </div>

@@ -22,7 +22,7 @@ $wid_arr = array();
 
 if ($_SESSION['role'] == "Manager") {
     // echo "mohit";
-    echo "<table class='table highlight responsive-table'> <tr><th>Workspace Name</th><th>Description</th><th>List of Task</th><th>Create Task</tr>";
+    echo "<table class='table highlight responsive-table'> <thead><tr><th>Workspace Name</th><th>Description</th><th>List of Task</th><th>Create Task</tr></thead>";
 
     ///Query for Displaying list of workspaces for manager.
     $sql = "SELECT distinct w.workspace_id, w.project_name,  w.description  FROM workspace AS w JOIN members AS m  ON w.workspace_id = m.workspace_id JOIN roles as r  ON m.role_id = r.role_id AND r.role_name = 'Manager' AND m.user_id = ". $_SESSION["uid"];
@@ -31,7 +31,7 @@ if ($_SESSION['role'] == "Manager") {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             $wid = $row['workspace_id'];
-            echo "<tr><td>" .  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=list_of_tasks.php?wid=" . $wid . ">List of Task </td></a><td><a class='list'  href=task_create.php?wid=" . $wid . ">Create Task</a></td></tr>" ;
+            echo "<tbody><tr><td>" .  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=list_of_tasks.php?wid=" . $wid . ">List of Task </td></a><td><a class='list'  href=task_create.php?wid=" . $wid . ">Create Task</a></td></tr></tbody>" ;
         }
         echo "<br>";
     }

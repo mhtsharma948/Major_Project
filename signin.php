@@ -106,19 +106,18 @@ else {
     // sign-in form
     echo "<div class='row center-align'><br><br><br>";
     echo "<div class='col s3'></div>";
-    echo "<div class=\"card cyan lighten-5 col s6\">";
+    echo "<div class=\"card cyan lighten-5 col l6 s12\">";
     echo "<form action='signin.php' method='post' class='col s12'>";
     echo "<div class='row center'>";
-    echo "<div class='col s2'></div>";
-    echo "<div class='input-field col s8'>";
+    echo "<div class='input-field col l11 s12'>";
     echo "<i class=\"material-icons prefix\">email</i>";
     echo "<input class='validate' type='email' name='email' placeholder='Email' value='" . $name . "'><span>". $emailErr . "</span><br>";
     echo "</div>";
     echo "</div>";
 
     echo "<div class='row'>";
-    echo "<div class='col s2'></div>";
-    echo "<div class='input-field col s8'>";
+//    echo "<div class='col s1'></div>";
+    echo "<div class='input-field col l11 s12'>";
     echo "<i class=\"material-icons prefix\">vpn_key</i>";
     echo "<input class='validate' type='password' name='pwd' placeholder='Password' value='" . $passwd . "'><span>". $pwdErr . "</span><br>";
     echo "</div>";
