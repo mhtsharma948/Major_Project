@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scle=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="resources/icon.png">
+    <link rel="apple-touch-startup-image" href="resources/splash.png">
+    <meta name="apple-mobile-web-app-title" content="ProjArch">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--Apple iOS tags-->
+
+    <!--Other mobile web app tags-->
+    <meta name="mobile-web-app-capable" content="yes">
     <title>Project Arch</title>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,7 +32,7 @@ session_start();
     if(empty($_SESSION["user"])) {
 
 
-        echo "<nav>";
+        /*echo "<nav>";
         echo "<div class='nav-wrapper  cyan lighten-2'>";
         echo "<a href='#!' class='brand-logo'>ProjArch</a>";
         echo "<ul class='right hide-on-med-and-down'>";
@@ -29,9 +40,10 @@ session_start();
         echo "<li><a href='signup_page.php'>Sign Up</a></li>";
         echo "</ul>";
         echo "</div>";
-        echo "</nav>";
+        echo "</nav>";*/
+        require 'navBeforeSignin.php';
 
-        echo "<div class=\"card col s6 transicard\">";
+        echo "<div class=\"card col s6 transicard\" style='margin-bottom: 0px; margin-top: 0px'>";
         echo "<br><p class='flow-text center white-text text-lighten-3' style='font-size: 60px;'>PROJECT MANAGEMENT<br> MADE EASY</p>";
         echo "<p class='flow-text center  blue-grey-text text-darken-4' style='font-size: 35px;'>ProjArch makes tracking, collaborating, and reporting a no-brainer, no matter how your teams choose to work.More than 15,000 organizations manage their work in ProjArch</p>";
 
@@ -49,5 +61,6 @@ session_start();
 ?>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script>$(document).ready(function(){ $(".button-collapse").sideNav(); });</script>
 </body>
 </html>
