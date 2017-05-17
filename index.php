@@ -34,12 +34,12 @@ session_start();
         require 'navBeforeSignin.php';
         echo "<div class='background'>";
         echo "<div class=\"card col s6 transicard\" style='margin-bottom: 0px; margin-top: 0px'>";
-        echo "<br><p class='flow-text center teal-text text-lighten-4' style='font-size: 60px;'>PROJECT MANAGEMENT<br> MADE EASY</p>";
+        echo "<br><p class='flow-text center teal-text text-lighten-4' style='font-size: 57px;'>PROJECT MANAGEMENT<br> MADE EASY</p>";
         echo "<p class='flow-text center  blue-grey-text text-darken-4' style='font-size: 35px;'>ProjArch makes tracking, collaborating, and reporting a no-brainer, no matter how your teams choose to work.More than 15,000 organizations manage their work in ProjArch</p>";
 
         echo "<div class='row center-align'>";
-        echo "<div class='col s5'></div>";
-        echo "<a class=\"waves-effect waves-light btn-large col s2\" href='signin.php'>Try Now</a></div>";
+        echo "<div class='col l5 m4 s2'></div>";
+        echo "<a class=\"waves-effect waves-light btn-large col l2 m3 s8\" href='signin.php'>Try Now</a></div>";
         echo "<br>";
         echo "</div>";
         echo "</div>";
