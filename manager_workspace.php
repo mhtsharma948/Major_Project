@@ -12,16 +12,9 @@
     <link rel="stylesheet" type="text/css" href="sass/stylesheets/homepage.css">
 </head>
 <body>
-<nav>
-    <div class='nav-wrapper  cyan lighten-2'>
-        <a href='#!' class='brand-logo'>ProjArch</a>
-        <ul class='right hide-on-med-and-down'>
-            <li><a href='signout.php'>Sign out</a></li>
-        </ul>
-    </div>
-</nav>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<?php
+require 'navAfterSignin.php';
+?>
 <?php
 session_start();
 require 'database_connection.php';
@@ -29,7 +22,7 @@ $wid_arr = array();
 
 if ($_SESSION['role'] == "Manager") {
     // echo "mohit";
-    echo "<table class='table'> <tr><th>Workspace Name</th><th>Description</th><th>List of Task</th><th>Create Task</tr>";
+    echo "<table class='table highlight responsive-table'> <tr><th>Workspace Name</th><th>Description</th><th>List of Task</th><th>Create Task</tr>";
 
     ///Query for Displaying list of workspaces for manager.
     $sql = "SELECT distinct w.workspace_id, w.project_name,  w.description  FROM workspace AS w JOIN members AS m  ON w.workspace_id = m.workspace_id JOIN roles as r  ON m.role_id = r.role_id AND r.role_name = 'Manager' AND m.user_id = ". $_SESSION["uid"];
@@ -90,6 +83,9 @@ else {
     echo "</table>";
 }
 ?>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>$(document).ready(function(){ $(".button-collapse").sideNav(); });</script>
 </body>
 </html>
 

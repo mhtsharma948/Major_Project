@@ -7,8 +7,8 @@ html {
     margin-bottom: 0px !important;
 }
 
-.transicard {
-
+.background {
+    background: url("../../background.jpg");
 }
 /*
 !* line 21, ../sass/homepage.scss *!
