@@ -125,7 +125,7 @@ else {
     echo "</div>";
     echo " <button class=\"btn waves-effect waves-light cyan lighten-2\" type=\"submit\" name=\"submit\" value='Submit'>Submit<i class=\"material-icons right\">send</i></button>";
     echo "</form>";
-    echo "<a href='signup_page.php'><i class=\"tiny material-icons\">perm_identity</i>no account?</a>";
+    echo "<a href='signup_page.php'><i class=\"tiny material-icons\">perm_identity</i>no account?</a><br><br>";
     echo "</div>";
     echo "</div>";
     echo "</div>";

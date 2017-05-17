@@ -24,31 +24,10 @@
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
-<!--
-    <nav>
-        <div class='nav-wrapper  cyan lighten-2'>
-            <a href='#!' class='brand-logo'>ProjArch</a>
-            <ul class='right hide-on-med-and-down'>
 
-            </ul>
-        </div>
-    </nav>
--->
-    <nav>
-        <div class="nav-wrapper">
-            <a href="index.php" class="brand-logo">ProjArch</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href='signin.php'>Sign In</a></li>
-                <li><a href='signup_page.php'>Sign Up</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href='signin.php'>Sign In</a></li>
-                <li><a href='signup_page.php'>Sign Up</a></li>
-            </ul>
-        </div>
-    </nav>
-
+<?php
+require 'navBeforeSignin.php';
+?>
     <div class='row center-align'><br><br><br>
         <div class='col s3'></div>
         <div class="card cyan lighten-5 col s6">
