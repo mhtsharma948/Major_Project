@@ -21,7 +21,6 @@ require 'database_connection.php';
 $wid_arr = array();
 
 if ($_SESSION['role'] == "Manager") {
-    // echo "mohit";
     echo "<table class='table highlight responsive-table'> <thead><tr><th>Workspace Name</th><th>Description</th><th>List of Task</th><th>Create Task</tr></thead>";
 
     ///Query for Displaying list of workspaces for manager.
@@ -31,7 +30,7 @@ if ($_SESSION['role'] == "Manager") {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             $wid = $row['workspace_id'];
-            echo "<tbody><tr><td>" .  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=list_of_tasks.php?wid=" . $wid . ">List of Task </td></a><td><a class='list'  href=task_create.php?wid=" . $wid . ">Create Task</a></td></tr></tbody>" ;
+            echo "<tbody><tr><td>" .  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=list_of_tasks.php?wid=" . $wid . ">List of Task </td></a><td><a class='list'  href=task_create.php?wid=" . $wid . ">Create Task</a></td></tr></tbod" ;
         }
         echo "<br>";
     }

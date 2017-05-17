@@ -43,7 +43,7 @@ require 'navAfterSignin.php';
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 $task_id = $row['task_id'];
-                echo "<tbody><tr><td>" . $row['task_name'] . "</td><td>" . $row['estimate_time'] . "</td><td>" . $row['description']. "</td><td><a class ='list' href=filter.php?tid=". $task_id . "> Filter</a></td></tr></tbody>" ;
+                echo "<tr><td>" . $row['task_name'] . "</td><td>" . $row['estimate_time'] . "</td><td>" . $row['description']. "</td><td><a class ='list' href=filter.php?tid=". $task_id . "> Filter</a></td></tr>" ;
                 echo "<br>";
             }
         }
