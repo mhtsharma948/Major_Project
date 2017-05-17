@@ -34,7 +34,7 @@ require 'navAfterSignin.php';
     $wid = $_GET['wid'];
     $dev = $_GET['dev'];
     require 'database_connection.php';
-    echo "<table class='table'> <tr><th>Task Name</th><th>Estimate Time</th><th>Description</th><th>Filter</th><th>Update</th></tr>";
+    echo "<table class='table highlight responsive-table'> <tr><th>Task Name</th><th>Estimate Time</th><th>Description</th><th>Filter</th><th>Update</th></tr>";
 
     // List of tasks for the manager
     if (!empty($wid) & $dev != 1) {
