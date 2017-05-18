@@ -37,8 +37,8 @@
       for ($k = 0; $k < 2; $k++) { 
         if($k == 0)
         echo $arr[$j][$k];
-        else 
-        echo "<input type='checkbox' name='". $add_name . "[]' value= " . $arr[$j][$k] . ">"; 
+        else
+        echo "<input type='checkbox' name='". $add_name . "[]' value= " . $arr[$j][$k] . "> 323232";
        } 
     }
     $add_name = "Developer";

@@ -30,7 +30,7 @@ if ($_SESSION['role'] == "Manager") {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             $wid = $row['workspace_id'];
-            echo "<tbody><tr><td>" .  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=listOfTasks.php?wid=" . $wid . ">List of Task </td></a><td><a class='list'  href=task_create.php?wid=" . $wid . ">Create Task</a></td></tr></tbod" ;
+            echo "<tbody><tr><td>" .  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=listOfTasks.php?wid=" . $wid . ">List of Task </td></a><td><a class='list'  href=taskCreate.php?wid=" . $wid . ">Create Task</a></td></tr></tbod" ;
         }
         echo "<br>";
     }
