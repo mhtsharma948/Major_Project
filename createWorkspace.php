@@ -33,7 +33,7 @@ require 'logoutdisplay.php';
       }
 
       if (empty($nameErr) && empty($descErr) && empty($mngErr)) {
-        require 'database_connection.php';
+        require 'databaseConnection.php';
 
        //Inserting workspace info into workspace table.
         $sql = "INSERT INTO workspace (project_name, description) VALUES('$pname' ,'$descr')";
@@ -78,7 +78,7 @@ require 'logoutdisplay.php';
           echo "Error: " . $sql . "<br>" . $conn->error;
           }
         }    
-          header('Location: main_page.php');
+          header('Location: mainPage.php');
         }
        
      }

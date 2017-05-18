@@ -35,10 +35,10 @@ if ($_SESSION["uid"] == 1) {
     echo "<a class='link' href='create_workspace.php'> Create a Workspace</a><br>";
 }
 else if ($_SESSION["role"] == "Manager") {
-    echo "<a class='link' href='manager_workspace.php'> List of Workspaces </a><br>";
+    echo "<a class='link' href='managerWorkspace.php'> List of Workspaces </a><br>";
 }
 else  {
-    echo "<a class='link' href='manager_workspace.php?dev=1'> List of Workspaces </a><br>";
+    echo "<a class='link' href='managerWorkspace.php?dev=1'> List of Workspaces </a><br>";
 }
 ?>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
