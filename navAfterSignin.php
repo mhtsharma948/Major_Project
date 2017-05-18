@@ -6,6 +6,7 @@
             <li class="waves-effect waves-red"><a href='signout.php' class="waves-red">Sign Out<i class="material-icons right">power_settings_new</i></a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
+            <li class="cyan-text center-align"><h4>ProjArch</h4><li>
             <li class="waves-effect waves-red"><a href='signout.php' class="waves-red">Sign Out<i class="material-icons right">power_settings_new</i></a></li>
         </ul>
     </div>
