@@ -33,7 +33,7 @@ require 'navAfterSignin.php';
     $uid = $_SESSION["uid"];
     $wid = $_GET['wid'];
     $dev = $_GET['dev'];
-    require 'database_connection.php';
+    require 'databaseConnection.php';
     echo "<table class='table highlight responsive-table'> <thead><tr><th>Task Name</th><th>Estimate Time</th><th>Description</th><th>Filter</th><th>Update</th></tr></thead>";
 
     // List of tasks for the manager

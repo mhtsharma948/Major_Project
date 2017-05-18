@@ -51,7 +51,7 @@ session_start();
     // if session exists
     else {
         echo "<br>";
-        require 'main_page.php';
+        require 'mainPage.php';
     }
 
     ?>

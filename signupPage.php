@@ -100,7 +100,7 @@ require 'navBeforeSignin.php';
         }
         if (empty($nameErr) && empty($emailErr) && empty($pwdErr)) {
             //Establishing DB connection.
-            require 'database_connection.php';
+            require 'databaseConnection.php';
 
             //Inserting data into signup table.
             $sql = "INSERT INTO signup (user_name, email_id, password) VALUES ('$name', '$email','$pass_md')";

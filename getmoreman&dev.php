@@ -14,7 +14,7 @@
     global $i, $arr, $add_name, $role_id, $set, $wid;
     
     //Establishing Database connection
-    require 'database_connection.php';
+    require 'databaseConnection.php';
 
      //Retrieving role_id for the desired role.
     $sql = "SELECT role_id from roles WHERE role_name = '" . $add_name . "'";

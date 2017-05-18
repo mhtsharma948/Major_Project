@@ -17,7 +17,7 @@ require 'navAfterSignin.php';
 ?>
 <?php
 session_start();
-require 'database_connection.php';
+require 'databaseConnection.php';
 $wid_arr = array();
 
 if ($_SESSION['role'] == "Manager") {

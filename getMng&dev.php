@@ -1,7 +1,7 @@
 <?php
   $arr = array(array());
   $add_name = "Manager";
-  require 'database_connection.php';
+  require 'databaseConnection.php';
   
    // Retrieving users for making them either manager or Developer or both.
    $sql = "SELECT user_id, user_name FROM signup";

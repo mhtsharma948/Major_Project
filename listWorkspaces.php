@@ -13,7 +13,7 @@
   
   // Displaying list of workspaces for Admin
   if ($_SESSION['role'] == "Admin" || $_SESSION['uid'] == 1) {
-   require 'database_connection.php';
+   require 'databaseConnection.php';
    echo "<table class='table'> <tr><th>Workspace Name</th><th>Description</th><th>Edit Workspace</th><th>List of Tasks</tr>";
 
    //Query for displaying list of workspaces. 

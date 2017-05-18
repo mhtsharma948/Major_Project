@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $pass_md = md5($passwd);
         }
         if (empty($emailErr) && empty($pwdErr)) {
-            require 'database_connection.php';
+            require 'databaseConnection.php';
 
             $sql = "SELECT user_id,user_name, email_id, password FROM signup";
             $result = $conn->query($sql);
@@ -90,14 +90,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $role_name =  $row['role_name'];
                     $_SESSION["role"] = $role_name;
                 }
-                header('Location: main_page.php');
+                header('Location: mainPage.php');
                 $conn->close();
             }
         }
     }
 }
 if ($_SESSION["uid"] == 1 || $_SESSION["role"] == "Manager" || $_SESSION["role"] == "Developer") {
-    header('Location: main_page.php');
+    header('Location: mainPage.php');
 }
 //Login Details
 else {
@@ -124,7 +124,7 @@ else {
     echo "</div>";
     echo " <button class=\"btn waves-effect waves-light cyan lighten-2\" type=\"submit\" name=\"submit\" value='Submit'>Submit<i class=\"material-icons right\">send</i></button>";
     echo "</form>";
-    echo "<a href='signup_page.php'><i class=\"tiny material-icons\">perm_identity</i>no account?</a><br><br>";
+    echo ">perm_identity</i>no account?</a><br><br>";
     echo "</div>";
     echo "</div>";
     echo "</div>";

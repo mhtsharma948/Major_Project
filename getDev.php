@@ -1,7 +1,7 @@
 <?php
   $arr = array(array());
   $wid = $_GET['wid'];
-  require 'database_connection.php';
+  require 'databaseConnection.php';
   $add_name = "Developer";
   $sql = "SELECT user_id, user_name FROM signup";
   $result = $conn->query($sql);

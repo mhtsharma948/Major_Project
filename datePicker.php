@@ -24,7 +24,7 @@
 	else {
 		//Checking if date entries are correct.
 		if ($end_date > $start_date) {
-			require 'database_connection.php';
+			require 'databaseConnection.php';
 			$sql = "SELECT time_log, comments, time_in_sec FROM dev_time_logs WHERE time_in_sec >= " . $start_date . "   and time_in_sec <= " . $end_date . " AND task_id = " . $task_id;
 				
 			 $result = $conn->query($sql);

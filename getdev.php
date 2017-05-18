@@ -11,7 +11,7 @@
   // This will display the list of users who are already developers in workspaces.
   function list_members() {
     global $i, $arr, $add_name, $wid, $role_id, $role_name;
-    require 'database_connection.php';
+    require 'databaseConnection.php';
     $sql = "SELECT distinct m.role_id FROM members AS m  JOIN roles AS r ON m.role_id = r.role_id WHERE r.role_name = '" . $role_name . "'" . "AND m.workspace_id = " . $wid ;
      $result = $conn->query($sql);
      if ($result->num_rows > 0) {

@@ -128,7 +128,7 @@
 
             //Checking if there is no error , all validations correct
             if (empty($nameErr) && empty($descErr) && empty($devErr) && empty($timeErr)) {
-                require 'database_connection.php';
+                require 'databaseConnection.php';
 
                 // Inserting data into table called task_create
                 $sql = "INSERT INTO task_create (task_name, estimate_time, description,workspace_id) VALUES('$tname', '$time', '$descr','$wid')";
@@ -152,7 +152,7 @@
                 $sql = "SELECT workspace_id FROM members WHERE workspace_id =" . $wid . " AND user_id = " . $developer . " AND role_id = 3";
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
-                    header('Location: main_page.php');
+                    header('Location: mainPage.php');
                 }
                 else {
                     //Inserting data into members table which will help user to show all the details which is assigned to him.
@@ -163,7 +163,7 @@
                     else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
                     }
-                    header('Location: main_page.php');
+                    header('Location: mainPage.php');
                 }
 
             }

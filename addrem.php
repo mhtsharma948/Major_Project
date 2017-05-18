@@ -24,7 +24,7 @@
     $dev_size = count($developer);
     $removemng = count($rem_manager);
     $remove_dev = count($rem_dev);
-    require 'database_connection.php';
+    require 'databaseConnection.php';
    
     // Removal of managers which are no longer needed.
     if (isset($_POST['rm'])) {

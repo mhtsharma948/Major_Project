@@ -40,7 +40,7 @@
 	
 		if (empty($timeErr) && empty($progressErr) && empty($commErr)) {
 			$prev_time = $prev_comm = "";
-			require 'database_connection.php';
+			require 'databaseConnection.php';
 
 			//Retrieving the previous spent time and modifying it with the updated one.
 			$sql = "SELECT spent_time FROM developer WHERE user_id = " . $uid;
@@ -65,7 +65,7 @@
 			$t = time();
 			$sql = "INSERT INTO dev_time_logs (time_log, comments, time_in_sec, task_id) values ('$time', '$comments', '$t', '$task_id')";
 			$conn->query($sql);
-			header('Location: main_page.php');
+			header('Location: mainPage.php');
 		}
 	}
 	echo "<br><form method='post' action=time_log.php?tid=" . $task_id ."&uid=" . $uid . "><div class='white'><p class='labels'>Timelog</p> <input type='text' name='log' value=" . $time . "><span>" . $timeErr . "</span>
