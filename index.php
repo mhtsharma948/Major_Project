@@ -44,7 +44,7 @@ session_start();
         echo "</div>";
         echo "</div>";
         echo "<script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-2.1.1.min.js\"></script>";
-        echo "</script>";
+        echo "<script type=\"text/javascript\" src=\"resources/js/materialize.min.js\"></script>";
         echo "<script>$(document).ready(function(){ $(\".button-collapse\").sideNav(); });</script>";
         echo "</body>";
     }
