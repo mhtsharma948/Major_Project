@@ -26,7 +26,6 @@
 <?php
 require 'navAfterSignin.php';
 ?>
-<div class='list'></div>
 <?php
     session_start();
     $dev = "";
