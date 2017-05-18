@@ -2,6 +2,10 @@
 session_start();
 require 'logoutdisplay.php';
 $wid = $_GET['wid'];
+echo "<input type='checkbox' >";
+echo "<input type=\"checkbox\" name='". $add_name . "[]'>";
+echo "<input type=\"checkbox\" id=\"test5\" />";
+echo "<label>Red</label>";
 ?>
 <html>
 <head>
@@ -16,7 +20,15 @@ $wid = $_GET['wid'];
 
     <!--Other mobile web app tags-->
     <meta name="mobile-web-app-capable" content="yes">
-
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Project Arch</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css" media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--custom css-->
     <link rel="stylesheet" type="text/css" href="resources/sass/stylesheets/homepage.css">
     <script>
         function getuser() {
