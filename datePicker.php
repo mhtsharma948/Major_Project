@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="sass/stylesheets/homepage.css">
+	<link rel="stylesheet" type="text/css" href="resources/sass/stylesheets/homepage.css">
 </head>
 <body>
 </body>

@@ -96,7 +96,7 @@ require 'logoutdisplay.php';
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="sass/stylesheets/homepage.css">
+	<link rel="stylesheet" type="text/css" href="resources/sass/stylesheets/homepage.css">
 	<script>
 	function getuser() {
 		xmlhttp = new XMLHttpRequest();
