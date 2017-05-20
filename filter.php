@@ -45,14 +45,14 @@ require 'navAfterSignin.php';
                 <div class='col s2'></div>
                 <div class='input-field col s8'>
                     <i class="material-icons prefix">today</i>
-                    <input class='validate' type='text' id="datepicker" placeholder='Start Date' ><br>
+                    <input class='datepicker' type='text' id="datepicker" placeholder='Start Date' ><br>
                 </div>
             </div>
             <div class='row center'>
                 <div class='col s2'></div>
                 <div class='input-field col s8'>
                     <i class="material-icons prefix">today</i>
-                    <input class='validate' type='text' id="datepicker1" placeholder='End Date' ><br>
+                    <input class='datepicker' type='text' id="datepicker1" placeholder='End Date' ><br>
                 </div>
             </div>
         <button class="btn waves-effect waves-light cyan lighten-2" type="button" value='Submit' onclick="getdet()">Submit<i class="material-icons right">send</i></button><br><br>
@@ -89,11 +89,12 @@ require 'navAfterSignin.php';
               xmlhttp.send();
           }
       </script>
-      <script>
-          $(function() {
-              $("#datepicker").datepicker();
-              $("#datepicker1").datepicker();
-          } );
-      </script>
+
+<script>
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+</script>
 </body>
 </html>

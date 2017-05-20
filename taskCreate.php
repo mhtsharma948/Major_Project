@@ -78,7 +78,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="resources/js/materialize.min.js"></script>
     <script>
-        function getuser() {
+        function ogetuser() {
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
