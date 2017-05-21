@@ -1,11 +1,7 @@
 <?php
 session_start();
-require 'logoutdisplay.php';
+require 'navAfterSignin.php';
 $wid = $_GET['wid'];
-echo "<input type='checkbox' >";
-echo "<input type=\"checkbox\" name='". $add_name . "[]'>";
-echo "<input type=\"checkbox\" id=\"test5\" />";
-echo "<label>Red</label>";
 ?>
 <html>
 <head>
@@ -30,38 +26,7 @@ echo "<label>Red</label>";
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--custom css-->
     <link rel="stylesheet" type="text/css" href="resources/sass/stylesheets/homepage.css">
-    <script>
-        function getuser() {
-            xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("add").innerHTML = this.responseText;
-                }
-            };
-            xmlhttp.open("POST","getmoreman&dev.php?wid=<?php echo $wid; ?>",true);
-            xmlhttp.send();
-        }
-        function getmng() {
-            xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("removemng").innerHTML = this.responseText;
-                }
-            };
-            xmlhttp.open("POST","getmng.php?wid=<?php echo $wid; ?>",true);
-            xmlhttp.send();
-        }
-        function getdev() {
-            xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("removedev").innerHTML = this.responseText;
-                }
-            };
-            xmlhttp.open("POST","getdev.php?wid=<?php echo $wid; ?>",true);
-            xmlhttp.send();
-        }
-    </script>
+
 </head>
 <!-- Option for Add more managers and developers and remove existing also -->
 <body>
@@ -82,5 +47,37 @@ echo "<label>Red</label>";
     <input type="submit" name="rd" value="Remove Developers">
 </form>
 <br><br>
+<script>
+    function getuser() {
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("add").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("POST","getmoreman&dev.php?wid=<?php echo $wid; ?>",true);
+        xmlhttp.send();
+    }
+    function getmng() {
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("removemng").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("POST","getmng.php?wid=<?php echo $wid; ?>",true);
+        xmlhttp.send();
+    }
+    function getdev() {
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("removedev").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("POST","getdev.php?wid=<?php echo $wid; ?>",true);
+        xmlhttp.send();
+    }
+</script>
 </body>
 </html>

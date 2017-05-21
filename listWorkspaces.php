@@ -39,7 +39,7 @@ if ($_SESSION['role'] == "Admin" || $_SESSION['uid'] == 1) {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             $wid = $row['workspace_id'];
-            echo "<tr></td><td>".  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list waves-effect waves-teal' href=workspaceTask.php?wid=" . $wid . ">EDIT <i class=\"material-icons waves-effect waves-teal\">mode_edit</i></td><td>  <a class ='list' href='listOfTasks.php?wid=" . $wid . "'>List of Tasks<i class=\"material-icons\">library_books</i></a></td> </tr>";
+            echo "<tr></td><td>".  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list waves-effect waves-teal' href=workspaceTask.php?wid=" . $wid . ">EDIT <i class=\"material-icons tiny waves-effect waves-teal\">mode_edit</i></td><td>  <a class ='list' href='listOfTasks.php?wid=" . $wid . "'>LIST OF TASK<i class=\" tiny material-icons\">library_books</i></a></td> </tr>";
 //            echo "<br>";
         }
     }

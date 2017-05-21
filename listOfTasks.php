@@ -42,7 +42,7 @@ require 'navAfterSignin.php';
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 $task_id = $row['task_id'];
-                echo "<tr><td>" . $row['task_name'] . "</td><td>" . $row['estimate_time'] . "</td><td>" . $row['description']. "</td><td><a class ='list' href=filter.php?tid=". $task_id . "> Filter</a></td></tr>" ;
+                echo "<tr><td>" . $row['task_name'] . "</td><td>" . $row['estimate_time'] . "</td><td>" . $row['description']. "</td><td><a class ='list' href=filter.php?tid=". $task_id . "> Filter      <i class=\"tiny material-icons\">clear_all</i></a></td></tr>" ;
                 echo "<br>";
             }
         }
@@ -57,7 +57,7 @@ require 'navAfterSignin.php';
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 $task_id = $row['task_id'];
-                echo "<tr><td>" . $row['task_name'] . "</td><td>" . $row['estimate_time'] . "</td><td>" . $row['description']. "</td><td><a class ='list' href=filter.php?tid=". $task_id . "> Filter by Date</a></td><td><a class='list' href=timeLog.php?uid=" . $uid . "&tid=". $task_id . ">Update</a></td></tr>" ;
+                echo "<tr><td>" . $row['task_name'] . "</td><td>" . $row['estimate_time'] . "</td><td>" . $row['description']. "</td><td><a class ='list' href=filter.php?tid=". $task_id . "> Filter by Date</a></td><td><a class='list' href=timeLog.php?uid=" . $uid . "&tid=". $task_id . ">Update<i class=\"tiny material-icons\">system_update_alt</i></a></td></tr>" ;
                 echo "<br>";
             }
         }
