@@ -27,11 +27,14 @@
   function list_members() {
     global $i, $arr, $add_name;
     for ($j = 0; $j < $i; $j++) {
-      for ($k = 0; $k < 2; $k++) { 
-        if($k == 0)
-        echo "<label for='". $add_name . "'>". $arr[$j][$k] ."</label>";
-        else 
-        echo "<input type='radio' id='". $add_name . "' name='". $add_name . "' value= " . $arr[$j][$k] . ">"; //. $add_name . $arr[$j][$k] . "<br>";
+      for ($k = 0; $k < 2; $k++) {
+
+          if ($k == 0) {
+              echo $arr[$j][$k];
+          }else{
+              echo "<input type='radio' id='q$j' name='" . $add_name . "' value= " . $arr[$j][$k] . ">"; //. $add_name . $arr[$j][$k] . "<br>";
+              echo "<label for='q$j'></label>";
+          }
       }
     }
   }

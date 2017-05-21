@@ -41,13 +41,14 @@
     //Displaying list of developers along with checkboxes.  
     for ($j = 0; $j < $i; $j++) {
       for ($k = 0; $k < 2; $k++) { 
-        if($k == 0) 
+        if($k == 0)
           echo $arr[$j][$k];
-        else { 
-            echo "<input type='checkbox' name='". $add_name . "[]' value= " . $arr[$j][$k] . ">";
-          }  
+        else {
+            echo "<input type='checkbox' id='d$j' name='". $add_name . "[]' value= " . $arr[$j][$k] . ">";
+            echo "<label for=\"d$j\"></label>";
         }
-      } 
+      }
     }
+  }
   }  
 ?>

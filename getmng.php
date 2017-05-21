@@ -43,10 +43,11 @@
         if($k == 0) 
           echo $arr[$j][$k];
         else { 
-            echo "<input type='checkbox' name='". $add_name . "[]' value= " . $arr[$j][$k] . ">";
-          }  
+            echo "<input type='checkbox' id='m$j' name='". $add_name . "[]' value= " . $arr[$j][$k] . ">";
+            echo "<label for='m$j'></label>";
         }
-      } 
+      }
     }
+  }
   }
 ?>

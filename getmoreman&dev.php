@@ -46,14 +46,10 @@
       for ($k = 0; $k < 2; $k++) { 
         if($k == 0) {
             echo "<label for=\"test$i\">". $arr[$j][$k] ."</label>";
-//            echo ". $i .";
         }
         else {
-//        echo "<input type='checkbox' name='". $add_name . "[]' value= " . $arr[$j][$k] . ">";
-            echo "<label for=\"test$i\">". $arr[$j][$k] ."</label>";
-
-            echo "<input type='checkbox' id=\"test$i\" name='". $add_name . "[]' value= " . $arr[$j][$k] . ">";
-
+            echo "<input type='checkbox' id=\"i$j\" name='". $add_name . "[]' value= " . $arr[$j][$k] . ">";
+            echo "<label for=\"i$j\"></label>";
         }
       }
     }
