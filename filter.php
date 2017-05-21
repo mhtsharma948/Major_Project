@@ -39,18 +39,18 @@ require 'navAfterSignin.php';
 
 
 <div class='row center-align'><br><br><br>
-    <div class='col s3'></div>
-    <div class="card cyan lighten-5 col s6">
+    <div class='col l3'></div>
+    <div class="card cyan lighten-5 col l6 s12">
             <div class='row center'>
                 <div class='col s2'></div>
-                <div class='input-field col s8'>
+                <div class='input-field col l8 s12'>
                     <i class="material-icons prefix">today</i>
                     <input class='datepicker' type='text' id="datepicker" placeholder='Start Date' ><br>
                 </div>
             </div>
             <div class='row center'>
-                <div class='col s2'></div>
-                <div class='input-field col s8'>
+                <div class='col l2'></div>
+                <div class='input-field col l8 s12'>
                     <i class="material-icons prefix">today</i>
                     <input class='datepicker' type='text' id="datepicker1" placeholder='End Date' ><br>
                 </div>

@@ -111,15 +111,16 @@ else {
     echo "<div class='row center'>";
     echo "<div class='input-field col l11 s12'>";
     echo "<i class=\"material-icons prefix\">email</i>";
-    echo "<input class='validate' type='email' name='email' placeholder='Email' value='" . $name . "'><span>". $emailErr . "</span><br>";
+    echo "<input class='validate' type='email' name='email' id='Email' value='" . $name . "'><span>". $emailErr . "</span><br>";
+    echo "<label for=\"Email\">Email</label>";
     echo "</div>";
     echo "</div>";
 
     echo "<div class='row'>";
-//    echo "<div class='col s1'></div>";
     echo "<div class='input-field col l11 s12'>";
     echo "<i class=\"material-icons prefix\">vpn_key</i>";
-    echo "<input class='validate' type='password' name='pwd' placeholder='Password' value='" . $passwd . "'><span>". $pwdErr . "</span><br>";
+    echo "<input class='validate' type='password' name='pwd' id='Password' value='" . $passwd . "'><span>". $pwdErr . "</span><br>";
+    echo "<label for=\"Password\">Pasword</label>";
     echo "</div>";
     echo "</div>";
     echo " <button class=\"btn waves-effect waves-light cyan lighten-2\" type=\"submit\" name=\"submit\" value='Submit'>Submit<i class=\"material-icons right\">send</i></button>";

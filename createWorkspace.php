@@ -1,6 +1,3 @@
-
-
-<!-- Page for creating a workspace by the admin -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -142,6 +139,8 @@ function test_input($data) {
             </div>
 
             <button class="btn waves-effect waves-light cyan lighten-2" type="button" onclick="getuser()">Add managers and developers<i class="material-icons right">supervisor_account</i></button><br><br>
+            <div id ="txtHint"><span class="error"><?php echo $mngErr;?></span><br></div>
+            <br><br>
             <button class="btn waves-effect waves-light cyan lighten-2" type="submit" name="submit" value='Submit'>Submit<i class="material-icons right">send</i></button><br><br>
         </form>
     </div>
@@ -155,7 +154,7 @@ function test_input($data) {
                     document.getElementById("txtHint").innerHTML = this.responseText;
                 }
             };
-            xmlhttp.open("POST","get_mng&dev.php",true);
+            xmlhttp.open("POST","getMng&dev.php",true);
             xmlhttp.send();
         }
     </script>

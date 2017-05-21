@@ -29,10 +29,10 @@
     for ($j = 0; $j < $i; $j++) {
       for ($k = 0; $k < 2; $k++) { 
         if($k == 0)
-        echo $arr[$j][$k];
+        echo "<label for='". $add_name . "'>". $arr[$j][$k] ."</label>";
         else 
-        echo "<input type='radio' name='". $add_name . "' value= " . $arr[$j][$k] . ">"; //. $add_name . $arr[$j][$k] . "<br>";
-       } 
+        echo "<input type='radio' id='". $add_name . "' name='". $add_name . "' value= " . $arr[$j][$k] . ">"; //. $add_name . $arr[$j][$k] . "<br>";
+      }
     }
   }
 ?>
