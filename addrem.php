@@ -33,7 +33,7 @@
         $sql = "DELETE FROM members WHERE user_id = " . $rem_manager[$i] . " AND role_id = 2";
         $result = $conn->query($sql);
       }
-       header('Location: workspace_task.php?wid=' . $wid);
+       header('Location: workspaceTask.php?wid=' . $wid);
     } 
 
     // Removal of developers which are no longer needed.
@@ -43,7 +43,7 @@
           $sql = "DELETE FROM members WHERE user_id = " . $rem_dev[$i] . " AND role_id = 3";
           $result = $conn->query($sql);
       }
-       header('Location: workspace_task.php?wid=' . $wid);
+       header('Location: workspaceTask.php?wid=' . $wid);
     }
       if (isset($_POST['add'])) {
       //Inserting new managers 
@@ -80,7 +80,7 @@
           echo "Error: " . $sql . "<br>" . $conn->error;
           }
         }
-       header('Location: workspace_task.php?wid=' . $wid);
+       header('Location: workspaceTask.php?wid=' . $wid);
       } 
     }   
 ?>

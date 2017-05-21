@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scle=1, user-scalable=no">
-    <link rel="apple-touch-icon" href="resources/icon.png">
-    <link rel="apple-touch-startup-image" href="resources/splash.png">
-    <meta name="apple-mobile-web-app-title" content="ProjArch">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!--Apple iOS tags-->
-
-    <!--Other mobile web app tags-->
-    <meta name="mobile-web-app-capable" content="yes">
-    <title>Project Arch</title>
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css" media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--custom css-->
-    <link rel="stylesheet" type="text/css" href="resources/sass/stylesheets/homepage.css">
-
-</head>
-<body>
-<?php
-require 'navAfterSignin.php';
-?>
 <?php
 session_start();
 $wid = $pname = $date = $descr = $manager = $developer = "";
@@ -117,6 +88,36 @@ function test_input($data) {
     return $data;
 }
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scle=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="resources/icon.png">
+    <link rel="apple-touch-startup-image" href="resources/splash.png">
+    <meta name="apple-mobile-web-app-title" content="ProjArch">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--Apple iOS tags-->
+
+    <!--Other mobile web app tags-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Project Arch</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css" media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="resources/sass/stylesheets/homepage.css">
+
+</head>
+<body>
+<?php
+require 'navAfterSignin.php';
+?>
+
 <div class='row center-align'><br><br><br>
     <div class='col s3'></div>
     <div class="card cyan lighten-5 col l6 s12 admin">
@@ -146,18 +147,18 @@ function test_input($data) {
     </div>
 </div>
 
-    <script>
-        function getuser() {
-            xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("txtHint").innerHTML = this.responseText;
-                }
-            };
-            xmlhttp.open("POST","getMng&dev.php",true);
-            xmlhttp.send();
-        }
-    </script>
+<script>
+    function getuser() {
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("POST","getMng&dev.php",true);
+        xmlhttp.send();
+    }
+</script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="resources/js/materialize.min.js"></script>
 <script>$(document).ready(function(){ $(".button-collapse").sideNav(); });</script>
