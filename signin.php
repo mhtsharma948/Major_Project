@@ -21,6 +21,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--font awesome library-->
     <link rel="stylesheet" href="resources/font-awesome-4.7.0/css/font-awesome.css">
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="resources/sass/stylesheets/homepage.css">
 </head>
 <body>
 <?php
