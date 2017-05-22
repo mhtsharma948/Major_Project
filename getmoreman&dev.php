@@ -1,18 +1,19 @@
 <?php
   $arr = array(array());
-  $add_name = "Manager";
   echo "Select managers";
   echo "<br>";
   $wid = $_GET['wid'];
-  list_members();  
+  $manager = "manager";
+  list_members($manager);
   echo "<br><br>";
+  $developer = "developer";
   echo "Select Developers";
   echo "<br>";
-  list_members();
+  list_members($developer);
 
-  function list_members() {
+  function list_members($get1) {
     global $i, $arr, $add_name, $role_id, $set, $wid;
-    
+
     //Establishing Database connection
     require 'databaseConnection.php';
 
@@ -46,12 +47,11 @@
       for ($k = 0; $k < 2; $k++) { 
         if($k == 0) {
             echo $arr[$j][$k];
-            echo $k;
+            echo "<div>ttttttttttttttttttttt</div>";
         }
         else {
             echo "<input type='checkbox' id=\"$k$j\" name='". $add_name . "[]' value= " . $arr[$j][$k] . ">";
             echo "<label for=\"$k$j\"></label>";
-            echo $k;
         }
       }
     }

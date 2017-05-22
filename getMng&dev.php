@@ -22,31 +22,31 @@
     }  
   }
       
-  echo "Select managers";
-  echo "<br><br>";
-  list_members();
-  echo "<br><br>";
-  echo "Select Developers";
-  echo "<br><br>";
-  list_members();
+echo "Select managers";
+echo "<br><br>";
 
-  //This function will display the lists of all the users which are there in DB for selecting managers and developers for the particular workspace.
-  function list_members() {
+
+list_members();
+echo "<br><br>";
+echo "Select Developers";
+echo "<br><br>";
+list_members();
+
+//This function will display the lists of all the users which are there in DB for selecting managers and developers for the particular workspace.
+function list_members() {
     global $i, $arr, $add_name;
     for ($j = 0; $j < $i; $j++) {
-      for ($k = 0; $k < 2; $k++) { 
-        if($k == 0) {
-            echo $arr[$j][$k];
-            echo $k;
+        for ($k = 0; $k < 2; $k++) {
+            if($k == 0) {
+                echo $arr[$j][$k];
+            }
+            else {
+                echo "<input type='checkbox' id='$add_name$j' name='" . $add_name . "[]' value= " . $arr[$j][$k] . ">";
+                echo "<label for=\"$add_name$j\"></label>";
+            }
         }
-        else {
-            echo "<input type='checkbox' id='j$j' name='" . $add_name . "[]' value= " . $arr[$j][$k] . ">";
-            echo "<label for=\"j$j\"></label>";
-            echo $k;
-        }
-      }
     }
     $add_name = "Developer";
     echo "<br>";
-  }
+}
 ?>
