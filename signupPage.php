@@ -100,7 +100,7 @@ function test_input($data) {
                 <div class='row center'>
                     <div class='input-field col l11 s12'>
                         <i class="material-icons prefix">account_circle</i>
-                        <input class='validate' type='text' id="uname" name='uname' value="<?php echo $name;?>"><span class="error"><?php echo $nameErr;?></span><br>
+                        <input class='validate' type='text' id="uname" name='uname' value="<?php echo $name;?>"><span class="error span"><?php echo $nameErr;?></span><br>
                         <label for="uname">User Name</label>
                     </div>
                 </div>

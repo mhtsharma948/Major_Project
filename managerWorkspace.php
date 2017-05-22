@@ -30,7 +30,7 @@ if ($_SESSION['role'] == "Manager") {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             $wid = $row['workspace_id'];
-            echo "<tbody><tr><td>" .  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=listOfTasks.php?wid=" . $wid . ">List of Task </td></a><td><a class='list'  href=taskCreate.php?wid=" . $wid . ">Create Task</a></td></tr></tbod" ;
+            echo "<tbody><tr><td>" .  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=listOfTasks.php?wid=" . $wid . ">List of Task<i class=\"material-icons tiny\">web</i> </td></a><td><a class='list'  href=taskCreate.php?wid=" . $wid . ">Create Task<i class=\"material-icons tiny\">edit_mode</i></a></td></tr></tbod" ;
         }
         echo "<br>";
     }
@@ -52,7 +52,7 @@ if ($_SESSION['role'] == "Manager") {
         $result = $conn->query($sql);
         // print_r($result);
         $row = $result->fetch_assoc();
-        echo "<tr><td>".  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=listOfTasks.php?dev=1&wid=" . $wid_arr[$j] . ">List of Task </td></a></tr>" ;
+        echo "<tr><td>".  $row['project_name'] . "</td><td>". $row['description'] . "</a></td><td><a class='list' href=listOfTasks.php?dev=1&wid=" . $wid_arr[$j] . ">List of Task <i class=\"material-icons tiny\">web</i></td></a></tr>" ;
         $j++;
     }
     echo "</table>";
