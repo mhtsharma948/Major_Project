@@ -63,16 +63,16 @@ require 'navAfterSignin.php';
 <script>$(document).ready(function(){ $(".button-collapse").sideNav(); });</script>
 <script>
     function getdet() {
-        console.log("get date");
         var a = $("#datepicker").val();
-        console.log($("#datepicker1").val()+"aaaaaaaaaaaaaa");
-        var b1 = $.datepicker.formatDate( "@", new Date(a) );
-        console.log($.datepicker.formatDate( "@", new Date(a) )+"qqqqqqqqqqqqqqqqqq");
+        console.log("hello",a);
+//        debugger;
+        var b1 = (new Date(a)).getTime();
         b1 = b1 / 1000;
         console.log(b1);
         var b = $("#datepicker1").val();
+        console.log(b);
 
-        b2 = $.datepicker.formatDate( "@", new Date(b) );
+        b2 = (new Date(b)).getTime();
         b2 = b2 / 1000;
         console.log(b2);
 
@@ -82,7 +82,7 @@ require 'navAfterSignin.php';
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("POST","date_picker.php?tid=<?php echo $task_id;?>&sd="+b1+"&ed="+b2,true);
+        xmlhttp.open("POST","datePicker.php?tid=<?php echo $task_id;?>&sd="+b1+"&ed="+b2,true);
         xmlhttp.send();
     }
 </script>
@@ -92,5 +92,11 @@ require 'navAfterSignin.php';
         selectYears: 15 // Creates a dropdown of 15 years to control year
     });
 </script>
+<!--<script>
+    $(function() {
+        $("#datepicker").datepicker();
+        $("#datepicker1").datepicker();
+    } );
+</script>-->
 </body>
 </html>
