@@ -10,7 +10,7 @@ html {
 .background {
     background: url("../../../background.jpg");
 }
-.error {
+/*.error {
     max-font-size: 10px;
     color: red;
 }
@@ -22,7 +22,7 @@ body {
 
 main {
     flex: 1 0 auto;
-}
+}*/
 /*
 !* line 21, ../sass/homepage.scss *!
 body {

@@ -96,7 +96,7 @@
      }
 
 
-     echo "<div class='row center-align'><br><br><br>";
+     echo "<div class='row center-align col l12'><br><br><br>";
      echo "<div class='col s3'></div>";
      echo "<div class=\"card cyan lighten-5 col l6 s12\">";
      echo "<form action=timeLog.php?tid=" . $task_id ."&uid=" . $uid . " method='post' class='col s12'>";
