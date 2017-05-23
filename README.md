@@ -16,7 +16,7 @@ MySQL Database
 ```
 
 ### Installing 
-####Installing Apache
+###Installing Apache
 
 A step by step series of examples that tell you have to get a development env running
 
@@ -28,7 +28,7 @@ A step by step series of examples that tell you have to get a development env ru
 sudo apt-get update
 sudo apt-get install apache2
 ```
-####Installing MySQL
+###Installing MySQL
 Now that we have our web server up and running, it is time to install MySQL. MySQL is a database management system. Basically, it will organize and provide access to databases where our site can store information.
 
 Again, we can use apt to acquire and install our software. This time, we'll also install some other "helper" packages that will assist us in getting our components to communicate with each other:
@@ -36,7 +36,7 @@ Again, we can use apt to acquire and install our software. This time, we'll also
 ```
 sudo apt-get install mysql-server
 ```
-####Installing PHP
+###Installing PHP
 PHP is the component of our setup that will process code to display dynamic content. It can run scripts, connect to our MySQL databases to get information, and hand the processed content over to our web server to display.
 
 We can once again leverage the apt system to install our components. We're going to include some helper packages as well, so that PHP code can run under the Apache server and talk to our MySQL database:
