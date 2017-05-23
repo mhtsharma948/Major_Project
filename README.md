@@ -38,7 +38,7 @@ Again, we can use apt to acquire and install our software. This time, we'll also
 ```
 sudo apt-get install mysql-server
 ```
-***Installing PHP**
+**Installing PHP**
 
 PHP is the component of our setup that will process code to display dynamic content. It can run scripts, connect to our MySQL databases to get information, and hand the processed content over to our web server to display.
 
