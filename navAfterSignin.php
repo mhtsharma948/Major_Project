@@ -12,7 +12,7 @@
             <li class="cyan-text center-align"><h4>ProjArch</h4><li>
             <li><a href='signout.php' class="waves-effect waves-red s12 l12">Sign Out<i class="material-icons right">power_settings_new</i></a></li>
             <!--            <li class=" grey-text center-align bottom-sheet  ">© 2014 Copyright Text<li>-->
-            <li class=" grey-text center-align bottom-sheet  ">Developed & Designed with <i class="fa fa-heart-o pink-text " aria-hidden="true"></i><li>
+            <li class=" grey-text center-align bottom-sheet  ">Developed & Designed with <i class="fa fa-heart-o pink-text " aria-hidden="true"></i> & <i class="fa fa-coffee pink-text" aria-hidden="true"></i><li>
 
         </ul>
     </div>

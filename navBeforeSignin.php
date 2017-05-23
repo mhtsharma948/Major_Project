@@ -15,7 +15,7 @@
             <li><a href='signupPage.php' class="waves-effect waves-teal">Sign Up<i class="material-icons right">perm_identity</i></a></li>
 
 <!--            <li class=" grey-text center-align bottom-sheet  ">© 2014 Copyright Text<li>-->
-            <li class=" grey-text center-align bottom-sheet  ">Developed & Designed with <i class="fa fa-heart-o pink-text " aria-hidden="true"></i><li>
+            <li class=" grey-text center-align bottom-sheet  ">Developed & Designed with <i class="fa fa-heart-o pink-text " aria-hidden="true"></i> & <i class="fa fa-coffee brown-text text-darken-1 " aria-hidden="true"></i><li>
 
         </ul>
     </div>
