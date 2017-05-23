@@ -66,11 +66,11 @@ http://localhost/Major_Project
 
 ## Contributing
 
-Please contact [mhtsharma948@gmail.com]for details on our code of conduct, and the process for submitting pull requests to us.
+Please contact [mhtsharma948@gmail.com] for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
+We use [semver](http://semver.org/) for versioning.
 
-We use [Github](https://github.com) for versioning.
 
 ## Authors
 
