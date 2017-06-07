@@ -5,6 +5,7 @@ This repo is for major project of college. In this project, we build a project a
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+[Note: The installation process provided below is for debian based linux system. for others, search how to install php, apache and MySQL]
 ### Prerequisites
 
 What things you need to install the software and how to install them
